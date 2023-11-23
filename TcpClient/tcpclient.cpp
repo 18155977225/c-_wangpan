@@ -121,7 +121,7 @@ void TcpClient::recvMsg()
         {
             // 登录成功
             if (strcmp(pdu->caData, LOGIN_OK) == 0) {
-                // 记录文件夹的路径
+                // 客户端的文件根路径（即服务器端存放客户端文件的位置）
                 m_strPath = QString("D:/ServerFiles/%1").arg(m_loginName);
 
                 QMessageBox::information(this, "提示", LOGIN_OK);;
