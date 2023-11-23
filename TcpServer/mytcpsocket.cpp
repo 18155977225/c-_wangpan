@@ -96,6 +96,7 @@ void MyTcpSocket::recvMsg()
 
                 // 创建文件夹（用户名命名)
                 QDir dir;
+                // D:/ServerFiles为服务器存放客户端文件的位置
                 dir.mkdir(QString("D:/ServerFiles/%1").arg(caName));
 
             } else {
